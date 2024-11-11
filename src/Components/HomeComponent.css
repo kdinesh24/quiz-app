@@ -1,9 +1,21 @@
+/* Centering and styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #7311c3;
     margin: 0;
     padding: 0;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height */
+    text-align: center;
+    flex-direction: column;
+    color: rgb(238, 234, 234);
+}
+
+.quiz-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .play-button {
@@ -13,15 +25,5 @@ body {
     padding: 15px 50px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    top: 300px;
-    
-}
-
-.quiz-title {
-    color: rgb(238, 234, 234);
-    position: relative;
-    top: 310px;
-    
+    font-size: 1.2rem;
 }
